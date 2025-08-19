@@ -38,6 +38,8 @@ function Dashboard() {
                 <h1 className="text-xl font-semibold text-gray-900">School Portal</h1>
               </div>
               <span className={`px-2 py-1 rounded-full text-xs font-medium ${getRoleColor(user.role)}`}>
+                {user.role.charAt(0).toUpperCase() + user.role.slice(1)}
+              </span>
             </div>
 
             <div className="flex items-center space-x-4">
